@@ -1,0 +1,151 @@
+:root {
+  --clr-back: #302929;
+  --clr-primary1: #f5204e;
+  --clr-primary2: #ff406e;
+  --clr-primary4: #d5002e;
+  --clr-primary3: #f5204e30;
+  --clr-primary5: #f5204e60;
+  --clr-text1: #fac2cf;
+  --clr-text2: #f89ab0;
+  --clr-shadow: #00000097;
+  --clr-white1: #dfdfdfdf;
+  --clr-white: #dfdfdf56;
+
+  font-family: sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #f5204e #fac2cf;
+  }
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+  *::-webkit-scrollbar-track {
+    background: #fac2cf;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #f5204e;
+    border-radius: 9px;
+    border: 0px none #ffffff;
+  }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-back);
+}
+
+/* header */
+
+.head {
+  width: 100%;
+  height: 160px;
+}
+
+.nav {
+  background: linear-gradient(to bottom, var(--clr-primary3), transparent);
+  padding: 0 150px 0 135px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.links li a {
+  color: var(--clr-white1);
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+  text-shadow: 0 2px 6px var(--clr-shadow);
+  transition: all 0.3s;
+}
+
+.links li a:hover {
+  color: var(--clr-primary1);
+}
+
+.links li a:active {
+  position: relative;
+  top: 1px;
+}
+
+.nav-logo {
+  width: 180px;
+  filter: drop-shadow(0 3px 6px var(--clr-shadow));
+}
+
+/* main */
+.marcas-nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  border-bottom: 2px solid var(--clr-primary1);
+  width: 90%;
+  padding: 50px 10px;
+  margin: auto;
+}
+.btn-marcas {
+  background: transparent;
+  border: none;
+}
+.btn-marcas img {
+  width: 200px;
+  filter: drop-shadow(0 3px 6px var(--clr-shadow));
+}
+.btn-marcas img:hover {
+  filter: drop-shadow(0 3px 6px var(--clr-text1)) brightness(90%);
+}
+/* marca */
+.marca-container {
+  padding: 50px 50px;
+}
+.title-marca {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--clr-primary1);
+  text-shadow: 0 2px 6px var(--clr-shadow);
+  padding-bottom: 30px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.p-marca {
+  padding: 20px;
+  color: var(--clr-white1);
+  font-size: 18px;
+  text-shadow: 0 3px 6px var(--clr-shadow);
+  width: 800px;
+}
+/* footer */
+.footer-container {
+  width: 100%;
+  height: 115px;
+  background: linear-gradient(to top, var(--clr-primary5), transparent);
+  color: var(--clr-text1);
+  text-align: center;
+}
+.links-redes {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0 30px 0;
+  list-style-type: none;
+}
+.links-redes li a {
+  color: var(--clr-text1);
+  text-decoration: none;
+}
+.links-redes li a:hover {
+  color: var(--clr-text2);
+}
+.footer-info {
+  font-size: 10px;
+}
