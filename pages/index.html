@@ -1,98 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A web about Esports Team">
-    <meta name="keywords" content="esports gaming zoen videojuegos valorant lol">
-    <meta name="owner" content="Zoen Gaming SA">
-    <meta name="built by" content="Enzo Holgado - enzoholgadodev@gmail.com">
-    <link rel="shortcut icon" href="../images/gmb.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <script src="https://kit.fontawesome.com/077744d74a.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A web about Esports Team" />
+    <meta
+      name="keywords"
+      content="esports gaming zoen videojuegos valorant lol"
+    />
+    <meta name="owner" content="Zoen Gaming SA" />
+    <meta name="built by" content="Enzo Holgado - enzoholgadodev@gmail.com" />
+    <link rel="shortcut icon" href="../images/gmb.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/077744d74a.js"
+      crossorigin="anonymous"
+    ></script>
     <title>zoen gaming</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="head">
-        <nav class="nav">
-            <ul class="links">
-                <li>
-                    <a href="index.html" class="link">INICIO</a>
-                </li>
-                <li>
-                    <a href="equipos.html" class="link">EQUIPOS</a>
-                </li>
-                <li>
-                    <img src="../images/gmb-text.png" class="nav-logo" alt="logo">
-                </li>
-                <li>
-                    <a href="marcas.html" class="link">MARCAS</a>
-                </li>
-                <li>
-                    <a href="about.html" class="link">ZOEN</a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="nav">
+        <button class="toggle-btn"><i class="fas fa-bars"></i></button>
+        <ul class="links">
+          <li>
+            <a href="index.html" class="link">INICIO</a>
+          </li>
+          <li>
+            <a href="equipos.html" class="link">EQUIPOS</a>
+          </li>
+          <li>
+            <img src="../images/gmb-text.png" class="nav-logo" alt="logo" />
+          </li>
+          <li>
+            <a href="marcas.html" class="link">MARCAS</a>
+          </li>
+          <li>
+            <a href="about.html" class="link">ZOEN</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="toggle-links">
+        <li>
+          <a href="index.html" class="t-link">INICIO</a>
+        </li>
+        <li>
+          <a href="equipos.html" class="t-link">EQUIPOS</a>
+        </li>
+        <li>
+          <a href="marcas.html" class="t-link">MARCAS</a>
+        </li>
+        <li>
+          <a href="about.html" class="t-link">ZOEN</a>
+        </li>
+      </ul>
     </header>
     <article class="main-container">
-        <button class="primary-btn">
-            <a class="primary-btn-text" href="about.html">CONOCENOS</a>
+      <button class="primary-btn">
+        <a class="primary-btn-text" href="about.html">CONOCENOS</a>
+      </button>
+      <div class="marcas-container">
+        <button class="marca-btn" href="https://instagram.com/ekuulu.epi/">
+          <img id="0" src="../images/marca1.png" alt="marca 1" class="marca" />
         </button>
-        <div class="marcas-container">
-            <button class="marca-btn" href="https://instagram.com/ekuulu.epi/">
-                <img id="0" src="../images/marca1.png" alt="marca 1" class="marca">
-            </button>
-            <button class="marca-btn" href="https://instagram.com/ekuulu.epi/">
-                <img id="1" src="../images/marca2.png" alt="marca 2" class="marca">
-            </button>
-            <button class="marca-btn" href="https://instagram.com/ekuulu.epi/">
-                <img id="2" src="../images/marca3.png" alt="marca 3" class="marca">
-            </button>
-            <button class="marca-btn" href="https://instagram.com/ekuulu.epi/">
-                <img id="3" src="../images/marca4.png" alt="marca 4" class="marca">
-            </button>
+        <button class="marca-btn" href="https://instagram.com/ekuulu.epi/">
+          <img id="1" src="../images/marca2.png" alt="marca 2" class="marca" />
+        </button>
+        <button class="marca-btn" href="https://instagram.com/ekuulu.epi/">
+          <img id="2" src="../images/marca3.png" alt="marca 3" class="marca" />
+        </button>
+        <button class="marca-btn" href="https://instagram.com/ekuulu.epi/">
+          <img id="3" src="../images/marca4.png" alt="marca 4" class="marca" />
+        </button>
+      </div>
+      <div class="modal-container">
+        <div class="modal">
+          <button class="close-modal">
+            <i class="fas fa-times-circle"></i>
+          </button>
+          <div class="marca-container">
+            <img src="" alt="marca 2" class="marca-modal" />
+            <h2 class="title-marca">Ekuulu Epi</h2>
+            <p class="p-marca">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia,
+              corrupti fugit veritatis molestiae dicta nobis at est voluptatum
+              repudiandae ipsum. Vero autem tempore aperiam iure aliquam,
+              suscipit adipisci magni facilis!
+            </p>
+          </div>
+          <a href="index.html" class="marca-link"><i class="fas fa-link"></i></a>
         </div>
-        <div class="modal-container">
-            <div class="modal">
-                <div class="marca-container">
-                    <img src="" alt="marca 2" class="marca-modal">
-                    <button class="close-modal">X</button>
-                    <h2 class="title-marca">Ekuulu Epi</h2>
-                    <p class="p-marca">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, corrupti fugit veritatis
-                        molestiae dicta nobis at est voluptatum repudiandae ipsum. Vero autem tempore aperiam iure
-                        aliquam,
-                        suscipit adipisci magni facilis!
-                    </p>
-                </div>
-                <a href="index.html" class="marca-link">►</a>
-            </div>
-        </div>
+      </div>
     </article>
     <footer class="footer-container">
-        <ul class="links-redes">
-            <li>
-                <a href="https://facebook.com/" class="link-redes">facebook</a>
-            </li>
-            <li>
-                <a href="https://twitter.com/" class="link-redes">twitter</a>
-            </li>
-            <li>
-                <a href="https://instagram.com/" class="link-redes">instagram</a>
-            </li>
-            <li>
-                <a href="https://twitch.com/" class="link-redes">twitch</a>
-            </li>
-        </ul>
-        <p class="footer-info">
-            copyright &copy; All right are reserved. Created by Enzo Holgado (enzoholgadodev@gmail.com) 2022/<span
-                id="date"></span>
-        </p>
+      <ul class="links-redes">
+        <li>
+          <a href="https://facebook.com/" class="link-redes">facebook</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" class="link-redes">twitter</a>
+        </li>
+        <li>
+          <a href="https://instagram.com/" class="link-redes">instagram</a>
+        </li>
+        <li>
+          <a href="https://twitch.com/" class="link-redes">twitch</a>
+        </li>
+      </ul>
+      <p class="footer-info">
+        copyright &copy; All right are reserved. Created by Enzo Holgado
+        (enzoholgadodev@gmail.com) 2022/<span id="date"></span>
+      </p>
     </footer>
     <!-- js -->
     <script src="../scripts/index.js"></script>
-</body>
-
+  </body>
 </html>
