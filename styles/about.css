@@ -189,7 +189,7 @@ body {
     width: 180px;
     filter: drop-shadow(0 3px 6px var(--clr-shadow));
   }
-  .about-info{
+  .about-info {
     width: 50%;
   }
 }

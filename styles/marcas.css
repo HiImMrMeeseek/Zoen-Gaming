@@ -116,7 +116,7 @@ body {
 .marca-container {
   padding: 0 30px;
 }
-.marca-img{
+.marca-img {
   width: 200px;
   margin: auto;
 }
@@ -235,12 +235,12 @@ body {
     filter: drop-shadow(0 3px 6px var(--clr-text1)) brightness(90%);
   }
   /* marca */
-  .marca-container{
+  .marca-container {
     width: 70%;
     margin: auto;
     padding-bottom: 50px;
   }
-  .marca-img{
+  .marca-img {
     padding-left: 50px;
   }
 }
