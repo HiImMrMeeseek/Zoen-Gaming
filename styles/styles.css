@@ -23,7 +23,7 @@
   scrollbar-color: #f5204e #fac2cf;
 }
 *::-webkit-scrollbar {
-  width: 15px;
+  width: 8px;
 }
 *::-webkit-scrollbar-track {
   background: #fac2cf;
