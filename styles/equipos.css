@@ -39,54 +39,89 @@ html {
 body {
   background-color: var(--clr-back);
 }
-
 /* header */
-
 .head {
-  width: 100%;
-  height: 160px;
+  background: linear-gradient(to bottom, var(--clr-primary3), transparent);
+  height: auto;
 }
 
 .nav {
-  background: linear-gradient(to bottom, var(--clr-primary3), transparent);
-  padding: 0 150px 0 135px;
-}
-
-.links {
+  padding: 10px 20px;
+  height: 90px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
+  justify-content: space-between;
 }
 
-.links li a {
+.toggle-btn {
+  background: transparent;
+  border: none;
+}
+.toggle-btn i {
+  color: var(--clr-white1);
+  font-size: 25px;
+}
+.toggle-btn i:hover {
+  color: var(--clr-primary1);
+  cursor: pointer;
+}
+.show-toggle-btn {
+  transform: rotate(90deg);
+}
+.link {
+  display: none;
+}
+.links {
+  list-style: none;
+}
+.nav-logo {
+  width: 100px;
+}
+.toggle-links {
+  list-style: none;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  display: none;
+}
+.show-links {
+  display: flex;
+}
+.t-link {
+  text-decoration: none;
   color: var(--clr-white1);
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: 700;
   font-size: 22px;
   text-shadow: 0 2px 6px var(--clr-shadow);
-  transition: all 0.3s;
 }
-
-.links li a:hover {
-  color: var(--clr-primary1);
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
 }
-
-.links li a:active {
-  position: relative;
-  top: 1px;
+.footer-container {
+  width: 100%;
+  height: 130px;
+  background: linear-gradient(to top, var(--clr-primary5), transparent);
+  color: var(--clr-text1);
+  text-align: center;
 }
-
-.nav-logo {
-  width: 180px;
-  filter: drop-shadow(0 3px 6px var(--clr-shadow));
+.links-redes {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0 30px 0;
+  list-style-type: none;
 }
-
-/* main */
-.nav-equipos {
-  height: 644px;
-  padding-top: 50px;
+.links-redes li a {
+  color: var(--clr-text1);
+  text-decoration: none;
+}
+.links-redes li a:hover {
+  color: var(--clr-text2);
 }
 .nuestros-equipos {
   text-align: center;
@@ -101,23 +136,22 @@ body {
 }
 .links-equipos {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  margin-top: 50px;
+  border-bottom: 2px solid var(--clr-primary1);
+  padding-bottom: 30px;
 }
-.links-equipos img {
-  border-radius: 5px;
-  box-shadow: 0px 0px 15px 5px var(--clr-shadow);
-}
-.links-equipos img:hover {
-  box-shadow: 0px 0px 20px 2px var(--clr-text2);
-  cursor: pointer;
+.equipos img {
+  width: 150px;
 }
 /* equipos */
 .team-container {
   height: 800px;
   display: none;
+  padding-top: 50px;
 }
 .show-teams {
   display: block;
@@ -135,10 +169,9 @@ body {
   margin-bottom: 50px;
 }
 .nav-players {
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
-  padding: 10px 400px;
-  margin-bottom: 100px;
 }
 .team-btns {
   background: none;
@@ -158,9 +191,6 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-.info-player {
-  width: 700px;
-}
 .id-player {
   font-weight: 700;
   font-size: 30px;
@@ -169,17 +199,13 @@ body {
   margin: auto;
   margin-bottom: 50px;
   letter-spacing: 2px;
-}
-.linea1 {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
   padding-left: 20px;
 }
-.linea2 {
+.info-player{
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   padding-left: 20px;
-  gap: 150px;
 }
 .name {
   color: var(--clr-white);
@@ -234,28 +260,119 @@ body {
   object-fit: cover;
   filter: drop-shadow(0 2px 6px var(--clr-shadow));
 }
-/* footer */
-.footer-container {
-  width: 100%;
-  height: 115px;
-  background: linear-gradient(to top, var(--clr-primary5), transparent);
-  color: var(--clr-text1);
-  text-align: center;
-}
-.links-redes {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 50px 0 30px 0;
-  list-style-type: none;
-}
-.links-redes li a {
-  color: var(--clr-text1);
-  text-decoration: none;
-}
-.links-redes li a:hover {
-  color: var(--clr-text2);
-}
 .footer-info {
   font-size: 10px;
+}
+@media screen and (min-width: 900px) {
+  /* header */
+
+  .head {
+    width: 100%;
+  }
+
+  .nav {
+    background: linear-gradient(to bottom, var(--clr-primary3), transparent);
+    padding: 0 150px 0 135px;
+  }
+  .toggle-btn {
+    display: none;
+  }
+  .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    padding-top: 70px;
+  }
+
+  .link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-white1);
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    text-shadow: 0 2px 6px var(--clr-shadow);
+    transition: all 0.6s;
+  }
+
+  .link:hover {
+    color: var(--clr-primary1);
+  }
+
+  .link:active {
+    position: relative;
+    top: 1px;
+  }
+  .nav-logo {
+    width: 180px;
+    filter: drop-shadow(0 3px 6px var(--clr-shadow));
+  }
+
+  /* main */
+  .main-container{
+    margin-top: 50px;
+  }
+  .nav-equipos {
+    width: 100%;
+    height: 644px;
+    padding-top: 50px;
+  }
+  .nuestros-equipos {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--clr-primary1);
+    text-shadow: 0 2px 6px var(--clr-shadow);
+    border-bottom: 2px solid var(--clr-primary1);
+    padding-bottom: 30px;
+    width: 90%;
+    margin: auto;
+  }
+  .team-container{
+    width: 100%;
+  }
+  .links-equipos {
+    padding-top: 50px;
+    display: flex;
+  }
+  .equipos img {
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 5px var(--clr-shadow);
+  }
+  .equipos img:hover {
+    box-shadow: 0px 0px 20px 2px var(--clr-text2);
+    cursor: pointer;
+  }
+  .info-player{
+    width: 500px;
+    gap: 50px;
+  }
+  /* footer */
+  .footer-container {
+    width: 100%;
+    height: 115px;
+    background: linear-gradient(to top, var(--clr-primary5), transparent);
+    color: var(--clr-text1);
+    text-align: center;
+  }
+  .links-redes {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0 30px 0;
+    list-style-type: none;
+  }
+  .links-redes li a {
+    color: var(--clr-text1);
+    text-decoration: none;
+  }
+  .links-redes li a:hover {
+    color: var(--clr-text2);
+  }
+  .footer-info {
+    font-size: 10px;
+  }
 }

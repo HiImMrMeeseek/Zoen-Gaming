@@ -115,7 +115,7 @@ const equipos = {
         },
         player3: {
             id: 'Amazing',
-            name: 'Maurice Stückenschneider',
+            name: 'Maurice Stückender',
             edad: '27',
             nacionalidad: 'Alemania',
             rol: 'Player/Jungle',
@@ -339,8 +339,14 @@ btns.forEach(item => {
     })
 })
 
-// seleccionar jugador
+// nav responsive
+const showLinks = document.querySelector('.toggle-links');
+const toggleBtn = document.querySelector('.toggle-btn');
 
+toggleBtn.addEventListener('click', function (e) {
+    showLinks.classList.toggle('show-links');
+    toggleBtn.classList.toggle('show-toggle-btn');
+})
 
 
 

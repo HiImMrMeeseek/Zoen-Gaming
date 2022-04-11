@@ -1,134 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A web about Esports Team">
-    <meta name="keywords" content="esports gaming zoen videojuegos valorant lol">
-    <meta name="owner" content="Zoen Gaming SA">
-    <meta name="built by" content="Enzo Holgado - enzoholgadodev@gmail.com">
-    <link rel="shortcut icon" href="./images/gmb.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/equipos.css">
-    <script src="https://kit.fontawesome.com/077744d74a.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A web about Esports Team" />
+    <meta
+      name="keywords"
+      content="esports gaming zoen videojuegos valorant lol"
+    />
+    <meta name="owner" content="Zoen Gaming SA" />
+    <meta name="built by" content="Enzo Holgado - enzoholgadodev@gmail.com" />
+    <link rel="shortcut icon" href="./images/gmb.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/equipos.css" />
+    <script
+      src="https://kit.fontawesome.com/077744d74a.js"
+      crossorigin="anonymous"
+    ></script>
     <title>zoen gaming</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="head">
-        <nav class="nav">
-            <ul class="links">
-                <li>
-                    <a href="index.html" class="link">INICIO</a>
-                </li>
-                <li>
-                    <a href="equipos.html" class="link">EQUIPOS</a>
-                </li>
-                <li>
-                    <img src="./images/gmb-text.png" class="nav-logo" alt="logo">
-                </li>
-                <li>
-                    <a href="marcas.html" class="link">MARCAS</a>
-                </li>
-                <li>
-                    <a href="about.html" class="link">ZOEN</a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="nav">
+        <button class="toggle-btn"><i class="fas fa-bars"></i></button>
+        <ul class="links">
+          <li>
+            <a href="index.html" class="link">INICIO</a>
+          </li>
+          <li>
+            <a href="equipos.html" class="link">EQUIPOS</a>
+          </li>
+          <li>
+            <img src="./images/gmb-text.png" class="nav-logo" alt="logo" />
+          </li>
+          <li>
+            <a href="marcas.html" class="link">MARCAS</a>
+          </li>
+          <li>
+            <a href="about.html" class="link">ZOEN</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="toggle-links">
+        <li>
+          <a href="index.html" class="t-link">INICIO</a>
+        </li>
+        <li>
+          <a href="equipos.html" class="t-link">EQUIPOS</a>
+        </li>
+        <li>
+          <a href="marcas.html" class="t-link">MARCAS</a>
+        </li>
+        <li>
+          <a href="about.html" class="t-link">ZOEN</a>
+        </li>
+      </ul>
     </header>
 
     <article class="main-container">
-        <div class="nav-equipos">
-            <h2 class="nuestros-equipos">NUESTROS EQUIPOS</h2>
-            <ul class="links-equipos">
-                <li>
-                    <a id="valorant" href="#foot" class="equipos"><img src="../images/pages-equipos/valorant.png"
-                            alt="tarjeta-valorant"></a>
-                </li>
-                <li>
-                    <a id="lol" href="#foot" class="equipos"><img src="../images/pages-equipos/lol.png"
-                            alt="tarjeta-lol"></a>
-                </li>
-                <li>
-                    <a id="csgo" href="#foot" class="equipos"><img src="../images/pages-equipos/csgo.png"
-                            alt="tarjeta-csgo"></a>
-                </li>
-                <li>
-                    <a id="dota2" href="#foot" class="equipos"><img src="../images/pages-equipos/dota2.png"
-                            alt="tarjeta-dota"></a>
-                </li>
-            </ul>
+      <div class="nav-equipos">
+        <h2 class="nuestros-equipos">NUESTROS EQUIPOS</h2>
+        <ul class="links-equipos">
+          <li>
+            <a id="valorant" href="#team" class="equipos"
+              ><img
+                src="../images/pages-equipos/valorant.png"
+                alt="tarjeta-valorant"
+            /></a>
+          </li>
+          <li>
+            <a id="lol" href="#team" class="equipos"
+              ><img src="../images/pages-equipos/lol.png" alt="tarjeta-lol"
+            /></a>
+          </li>
+          <li>
+            <a id="csgo" href="#team" class="equipos"
+              ><img src="../images/pages-equipos/csgo.png" alt="tarjeta-csgo"
+            /></a>
+          </li>
+          <li>
+            <a id="dota2" href="#team" class="equipos"
+              ><img src="../images/pages-equipos/dota2.png" alt="tarjeta-dota"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="team-container">
+        <h2 class="team-title" id="team">Valorant</h2>
+        <div class="nav-players">
+          <button class="fas fa-user team-btns" id="couch"></button>
+          <button class="fas fa-user team-btns" id="player1"></button>
+          <button class="fas fa-user team-btns" id="player2"></button>
+          <button class="fas fa-user team-btns" id="player3"></button>
+          <button class="fas fa-user team-btns" id="player4"></button>
+          <button class="fas fa-user team-btns" id="player5"></button>
         </div>
-        <div class="team-container">
-            <h2 class="team-title" id="team">Valorant</h2>
-            <div class="nav-players">
-                <button class="fas fa-user team-btns" id="couch"></button>
-                <button class="fas fa-user team-btns" id="player1"></button>
-                <button class="fas fa-user team-btns" id="player2"></button>
-                <button class="fas fa-user team-btns" id="player3"></button>
-                <button class="fas fa-user team-btns" id="player4"></button>
-                <button class="fas fa-user team-btns" id="player5"></button>
+        <h2 class="id-player">Pepefu</h2>
+        <div class="player">
+          <div class="info-player">
+            <div class="name">
+              <h4 class="name-c">Nombre</h4>
+              <span class="name-player">Pepe Fulanito</span>
             </div>
-            <div class="player">
-                <div class="info-player">
-                    <h2 class="id-player">Pepefu</h2>
-                    <div class="linea1">
-                        <div class="name">
-                            <h4 class="name-c">Nombre</h4>
-                            <span class="name-player">Pepe Fulanito</span>
-                        </div>
-                        <div class="edad-c">
-                            <h4 class="edad">Edad</h4>
-                            <span class="edad-player">25</span>
-                        </div>
-                        <div class="nacionalidad-c">
-                            <h4 class="nacionalidad">Nacionalidad</h4>
-                            <span class="nacionalidad-player">Chileno</span>
-                        </div>
-                    </div>
-                    <div class="linea2">
-                        <div class="rol-c">
-                            <h4 class="rol">Rol</h4>
-                            <span class="rol-player">Jugador</span>
-                        </div>
-                        <div class="redes-c">
-                            <h4 class="redes">Redes</h4>
-                            <span class="redes-player">
-                                <a id="twitter-player" href="https://twitter.com/" class="fab fa-twitter"></a>
-                                <a id="insta-player" href="https://instagram.com/" class="fab fa-instagram-square"></a>
-                                <a id="twitch-player" href="https://twitch.com/" class="fab fa-twitch"></a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <img class="player-photo" src="./images/pages-equipos/tarjetas-jugadores.png" alt="asd">
+            <div class="edad-c">
+              <h4 class="edad">Edad</h4>
+              <span class="edad-player">25</span>
             </div>
+            <div class="nacionalidad-c">
+              <h4 class="nacionalidad">Nacionalidad</h4>
+              <span class="nacionalidad-player">Chileno</span>
+            </div>
+            <div class="rol-c">
+              <h4 class="rol">Rol</h4>
+              <span class="rol-player">Jugador</span>
+            </div>
+            <div class="redes-c">
+              <h4 class="redes">Redes</h4>
+              <span class="redes-player">
+                <a
+                  id="twitter-player"
+                  href="https://twitter.com/"
+                  class="fab fa-twitter"
+                ></a>
+                <a
+                  id="insta-player"
+                  href="https://instagram.com/"
+                  class="fab fa-instagram-square"
+                ></a>
+                <a
+                  id="twitch-player"
+                  href="https://twitch.com/"
+                  class="fab fa-twitch"
+                ></a>
+              </span>
+            </div>
+          </div>
+          <img
+            class="player-photo"
+            src="./images/pages-equipos/tarjetas-jugadores.png"
+            alt="asd"
+          />
         </div>
+      </div>
     </article>
 
     <footer id="foot" class="footer-container">
-        <ul class="links-redes">
-            <li>
-                <a href="https://facebook.com/" class="link-redes">facebook</a>
-            </li>
-            <li>
-                <a href="https://twitter.com/" class="link-redes">twitter</a>
-            </li>
-            <li>
-                <a href="https://instagram.com/" class="link-redes">instagram</a>
-            </li>
-            <li>
-                <a href="https://twitch.com/" class="link-redes">twitch</a>
-            </li>
-        </ul>
-        <p class="footer-info">
-            copyright &copy; All right are reserved. Created by Enzo Holgado (enzoholgadodev@gmail.com) 2022/<span
-                id="date"></span>
-        </p>
+      <ul class="links-redes">
+        <li>
+          <a href="https://facebook.com/" class="link-redes">facebook</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" class="link-redes">twitter</a>
+        </li>
+        <li>
+          <a href="https://instagram.com/" class="link-redes">instagram</a>
+        </li>
+        <li>
+          <a href="https://twitch.com/" class="link-redes">twitch</a>
+        </li>
+      </ul>
+      <p class="footer-info">
+        copyright &copy; All right are reserved. Created by Enzo Holgado
+        (enzoholgadodev@gmail.com) 2022/<span id="date"></span>
+      </p>
     </footer>
     <!-- js -->
     <script src="./scripts/equipos.js"></script>
-</body>
-
+  </body>
 </html>

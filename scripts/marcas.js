@@ -28,7 +28,6 @@ const marcaImg = document.querySelector('.marca-img');
 
 marcas.forEach(function (marca) {
     marca.addEventListener("click", (e) => {
-        console.log(marca.id)
         let title = patrocinadores[marca.id].title;
         let info = patrocinadores[marca.id].info;
         let img = patrocinadores[marca.id].img;
@@ -38,8 +37,13 @@ marcas.forEach(function (marca) {
         modalInfo.innerHTML = `${info}`;
     });
 });
-closeModal.addEventListener('click', function (e) {
-    modal.classList.remove('open-modal');
+// nav responsive
+const showLinks = document.querySelector('.toggle-links');
+const toggleBtn = document.querySelector('.toggle-btn');
+
+toggleBtn.addEventListener('click', function (e) {
+    showLinks.classList.toggle('show-links');
+    toggleBtn.classList.toggle('show-toggle-btn');
 })
 
 // foot
